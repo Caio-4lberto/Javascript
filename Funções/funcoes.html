@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Funções </title>
+        <script>
+            /* __________________________________FUNÇÃO - ESTRUTURA_____________________________________
+            function nomeDaFuncao ( param1, param2 ) {
+
+            var teste = param1 * param2;
+            return teste;
+            }
+
+            document.write('Esse é o valor:' + nomeDaFuncao( 58, 60 ));
+            ___________________________________________________________________________________________*/
+
+            /*  ___________________________________PASSO A PASSO_________________________________________
+            1º - INFORMAR QUE É UMA FUNÇÃO;
+            2º - COLOCAR O NOME DA VARIÁVEL SEGUINDO O PADRÃO (VERBO NO INFINITIVO + SUBSTANTIVO);
+            3º - DIZER O(S) PARAMETRO(S), LEMBRE-SE QUE OS PARAMETROS SÃO AS VARIÁVEIS QUE SERÃO 
+            UTILIZADAS NO CALCULO DO CORPO DA FUNÇÃO;
+            4º - CALCULO NO CORPO DA FUNÇÃO QUE SERÃO ARAMAZENADO NUMA VARIÁVEL;
+            5º -  RETORNO DA VARIÁVEL QUE ARMAZENOU A LÓGICA OU PODE OPTAR PELO (void) , ONDE NÃO
+            RETORNA NADA PARA QUEM FEZ A CHAMADA.  
+            6º - PARA FAZER USO DAS FUNÇÕES BASTA COLOCAR O NOME DA FUNÇÃO E AO LADO OS VALORES DOS 
+            RESPECTIVOS PARAMETROS QUE SERÃO UTILIZADOS;
+            OBS = QUANDO A IDE LER O CÓDIGO , ELE PRIORIZA PRIMEIRO AS FUNÇÕES. DESSA FORMA, NÃO
+            IMPORTA SE VC CHAMA A FUNÇÃO ANTES OU DEPOIS DA CRIAÇÃO DELA.
+            ______________________________________________________________________________________________ */
+
+            /*______________________________________________________________________________________________
+             SE VC QUISER MELHORAR A LEITURA DO SCRIPT PODE FAZER O SEGUINTE
+            var teste = nomeDaFuncao(15, 25);
+            ASSIM TORNA-SE MAIS LIMPO AO CHAMAR APENAS PELA VARIÁVEL
+                document.write('Esse é o valor:' + teste);
+            ________________________________________________________________________________________________*/
+
+            /*________________________FLEXIBILIDADE DE PARAMETROS_____________________________________________
+             function soma( a, b){
+                 return a + b;
+             }
+
+             console.log(soma(7, 7));           ---> 14 
+             console.log(soma(7, 7, 9, 15));    ---> 14   desconsidera os valores restantes
+             console.log(soma(7));              ---> NaN  Not a Number, pois a ausencia cria undefined(7 + undefined = NaN)
+             console.log(soma());               ---> NaN  Not a Number, pois será (undefined + undefined) 
+
+            ________________________________________________________________________________________________*/
+
+
+            function calcularAreaTerreno ( largura, comprimento){
+                var area = largura * comprimento;
+                return area; 
+            }
+
+            var largura = prompt('Digite a largura do terreno em metros:');
+            var comprimento = prompt('Informe o comprimento do terreno em metros');
+
+            largura = parseFloat(largura);
+            comprimento = parseFloat(comprimento);
+
+            var area = calcularAreaTerreno ( largura, comprimento);
+
+            document.write('O terreno possui ' + area + ' metros quadrados.');
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

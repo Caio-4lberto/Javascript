@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Funções - Escopo de variáveis </title>
+        <script>
+            /* ______________________TIPOS DE ESCOPO_______________________________
+            GLOBAL = PRESENTE NO CORPO DO SCRIPT;
+            BLOCO = PRESENTE NO IF/ELSE E SWITCH;
+            FUNÇÃO = PRESENTE NO SEU RESPECTIVO NOME
+            _________________________________________________________________________________
+                OBSERVA-SE NO CÓDIGO ABAIXO QUE:
+                1º - ESCOPO DE FUNÇÃO E DE BLOCO VISUALIZAM VARIÁVEIS DO ESCOPO GLOBAL;
+                2º - VARIÁVEIS NO ESCOPO DE BLOCO SOFREM ELEVAÇÃO (HOISTING);
+                3º - SE HOUVER UM IF DENTO DE UMA FUNÇÃO, O ESCOPO DE BLOCO SOFRERÁ ELEVAÇÃO 
+                PARA O ESCOPO DA FUNÇÃO;
+                4º - ESCOPO DA FUNÇÃO E ESCOPO GLOBAL SÃO SEPARADOS, SE DECLARAR UMA VARIÁVEL 
+                NO ESCOPO DA FUNÇÃO NÃO SERÁ VISUALIZADA FORA DELA.
+                                "FUNÇÃO É UM SUBPROGRAMA DENTRO DO SEU PROGRAMA!"
+             _______________________________________________________________________________*/
+
+             var serie = 'How i met your mother';
+
+             //ESCOPO DE BLOCO
+             if(true){
+                 var serie2 = 'Game of Thrones';
+                 document.write(serie + '</br>');
+             }
+
+             document.write(serie2 + '</br>');
+
+             //ESCOPO DE FUNÇÃO
+             function teste(){
+                 serie3 = 'The walking Dead';
+                 document.write(serie + '</br>');
+                 document.write(serie2);
+             }
+
+             teste();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Media Aluno II - toString, parseInt, parseFloat </title>
+        <script>
+
+            /* Comandos Casting
+            toString - SERVE PARA CAMBIAR A VARIÁVEL DE NUMBER PARA STRING;
+            ---------MODO DE USO: ADICIONAR ( .toString() ) APÓS A VARIÁVEL ----------------------------------- 
+            -------------- EX: var idade = 10; 
+                                  document.write( idade.toString() );
+
+            ----------------------------------------------------------------------------------------------------
+
+            pasrseInt - ALTERA A VARIÁVEL DE STRING OU NUMBER FLOAT PARA NUMBER INTEIRO.
+            parseFloat - MODIFICA A VARIÁVEL DE STRING OU NUMBER INT PARA NUMBER FLOAT.     
+            ------MODO DE USO: ATRIBUIR O VALOR DA VARIÁVEL COM ELA MESMA, NO ENTANTO EESTARÁ COM O CASTING-----
+            -------------------------    EX: nota1 = parseInt(nota1);   --------------------------------------- */ 
+
+
+            var nota1 = prompt('Digite a nota do primeiro semestre do aluno:');
+            var nota2 = prompt('Digite a nota do segundo semestre do aluno:');
+            var nota3 = prompt('Digite a nota do terceiro semestre do aluno:');
+            var nota4 = prompt('Digite a nota do quarto semestre do aluno:');
+
+            nota1 = parseFloat(nota1);
+            nota2 = parseFloat(nota2);
+            nota3 = parseFloat(nota3);
+            nota4 = parseFloat(nota4);
+
+            var notaFinal = (nota1 + nota2 + nota3 + nota4) / 4;
+
+            var media = 7;
+            
+            if(notaFinal >= media){
+                document.write('Sua nota foi:' + notaFinal + '</br>' + 'Aprovado!');
+            } else {
+                document.write('Sua nota foi:' + notaFinal + '</br>' + 'Reprovado!');
+            }
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

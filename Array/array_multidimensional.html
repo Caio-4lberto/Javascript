@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Array Multidimensional </title>
+
+        <script>
+            /*_________________________________________________________________________________________
+
+            PARA A UTILIZAÇÃO DO ARRAY MULTIDIMMENSIONAL SIGA OS PASSOS ABAIXO:
+            1 - CRIE A VARIÁVEL RECEBENDO O ARRAY(SEM CONTER NADA DENTRO DELE) ;
+            2 - NESSE ARRAY NOMEIE OS INDICES COM STRING E ESSE NOME SERÁ O DO ARRAY QUE SERÁ INCLUÍDO;
+            3 - NO LOCAL ONDE FICA O VALOR RESPECTIVO AO INDICE ABRA UM ARRAY POSSIBILITANDO MULTIPLOS
+            VALORE REFERENTES AO INDICE QUE VOCÊ CRIOU ANTERIORMENTE;
+            4 - DEPENDENDO DE QUANTOS ARRAY É PRECISO ADICIONAR, CONTINUE REPETINDO A PARTIR DA ETAPA 2.
+            ___________________________________________________________________________________________*/
+            
+            var lista_coisas = Array();
+            lista_coisas['objetos'] = Array('Caneta', 'Vela', 'Papel', 'Cadeira');
+            lista_coisas['pessoas'] = ['João', 'Maria', 'Débora'];
+
+            /*___________________________________________________________________________________________
+            document.write(lista_coisas['pessoas']['2']);            ---> PODERIA TER USADO O CONSOLE.LOG
+            document.write( '</br>' + lista_coisas['objetos']['1']); 
+            ____________________________________________________________________________________________*/
+
+            document.write('A/O ' + lista_coisas['pessoas']['2'] + ' deseja pegar um(a) ' + lista_coisas['objetos']['1'] + '!');
+
+        </script>
+    
+    </head>
+    <body>
+       
+        
+    </body>
+</html>

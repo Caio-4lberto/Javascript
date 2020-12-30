@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Break e Continue </title>
+        <script>
+
+        /*______________________________________________BREAK____________________________________________________________
+
+        É O MESMO UTILIZADO NO SWITCH e SERVE PARA PARAR, ELE PODE SER USADO PARA INTERROMPER O LOOP APLICANDO ELE JUNTO
+        COM O "if".
+
+        PODE SER UTILIZADO EM QUALQUER ESTRUTURA DE REPETIÇÃO!
+        
+        ______________________________________________CONTINUE__________________________________________________________
+        
+        SERVE PARA CONTINUAR NEGANDO TUDO QUE TIVER ADIANTE, POSSIBILITANDO PULAR REPETIÇÕES DE ACORDO COM A CONDIÇÃO QUE
+        TERÁ NO if QUE É NORMALMENTE UTILIZADO JUNTO.
+
+                PODE SER UTILIZADO EM QUALQUER ESTRUTURA DE REPETIÇÃO!
+        ______________________________________________________________________________________________________________*/
+
+        //EXEMPLO BREAK
+        var x = 1;
+        
+        while(x <= 10){
+            document.write(x + '</br>');
+            x++
+            if( x === 5){
+                break
+            }
+        }
+
+        document.write('<hr />');
+
+ /*     //MANEIRA ERRADA DE USAR CONTINUE     ----> O controle ESTANDO DEPOIS AO CHEGAR NO 6 EXECUTARÁ O if E PULARÁ O controle ( y++ )
+        
+        var y = 1;
+        
+        while(y <= 10){
+            if( y === 6){                    ---> AO CHEGAR NO 6 ELE PULARÁ O QUE ESTÁ FORA DO IF PARA REINICIAR O LOOP,PORÉM COM O VALOR 6 E FICARÁ SE REPETINDO
+                continue
+            }
+            document.write(y + '</br>' + '<hr />');
+            y++
+        }
+
+        */
+
+
+        //MANEIRA CERTA DE USAR CONTINUE 
+
+        var y = 1;
+
+        while(y <= 10){                        //SAÍDA: NÃO TERÁ O 6 POIS PULOU A EXIBIÇÃO DO 'document.write', PORÉM TERÁ 11.
+            y++                                //O 11 É DEVIDO AO 10 FAZER PARTE DA CONDIÇÃO E AO PASSAR O controle ADICIONARÁ +1
+            if( y === 6){
+                continue
+            }
+            document.write(y + '</br>');
+        }
+
+        
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Funções nativas para tarefas matemáticas </title>
+        <script>
+            
+            var a = Math.ceil(10.456);  //SAÍDA: 11 ---> ARREDONDA PARA CIMA
+            document.write(a);
+            document.write('</br>');
+
+            var b = Math.floor(10.456);  //SAÍDA: 10 ---> CONSIDERA O PRIMEIRO VALOR ANTES DA VÍRGULA
+            document.write(b);
+            document.write('</br>');
+
+            var c = Math.round(10.585);  //SAÍDA: 11 ---> ARREDONDA PARA CIMA
+            document.write(c);
+            document.write('</br>');
+
+
+            /*_____________________FUNÇÃO RANDOM___________________________
+            A MANEIRA É SIMPLES E NÃO NECESSITA DE PARAMETROS.
+
+                                    ESTRUTURA
+            var x = Math.random();
+            document.write(x);
+
+            NO ENTANTO, AS SAÍDAS DO (Math.random) SÃO FRACIONÁRIOS ENTRE 0 E 1.
+            COM ISSO, MULTIPLIQUEI POR 100 PARA VIRAR VALORES DE 0 A 99 E USEI
+            (Math.floor) QUE ACABAMOS DE APRENDER PARA EXIBIR APENAS O VALOR
+            ALEATÓRIO ANTES DA VÍRGULA.
+            ________________________________________________________________*/
+
+            var random = Math.random();  //  VALORES ALEATÓRIOS ENTRE 0 E 1
+            var calculo = (random * 100);
+            e = Math.floor(calculo);
+            document.write(e); //SAÍDA: VALORES ALEATÓRIOS ENTRE 0 E 99
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

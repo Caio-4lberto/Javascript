@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Eventos Mouse  </title>
+        <script>
+            function acao(){
+                alert('Evento diparado');
+            }
+
+            function acao2(){
+                alert('O cursor do mouse deixou a região do elemento');
+            }
+
+        </script>
+    </head>
+    <body>
+    <!--  OBS = ELE É APLICADO COMO PROPRIEDADES DE EVENTOS HTML;
+          OBS2 =  PODE UTILIZAR O EVENTO COM FUNÇÕES COMO ESTÁ NO EXEMPLO ABAIXO OU NÃO.
+          OBS3 = NÃO SÃO TODOS OS ELEMENTOS HTML QUE PEMITEM O USO ( PARA SABER QUAIS CONSULTE NO SITE W3Schools)
+        
+        
+        ______________________________________________ONCLICK________________________________________________________ 
+        EXECUTA A AÇÃO AO DAR 1 CLIQUE COM O MOUSE
+            <div onclick ="acao()" style= "background:#ccc; height: 150px; width: 150px" ></div>
+
+        ______________________________________________ONDBLCLICK_______________________________________________________
+        EXECUTA A AÇÃO AO REALIZAR 2 CLIQUES SIMULTÂNEOS
+            <div ondblclick="acao()" style= "background:#ccc; height: 150px; width: 150px" ></div>
+
+        ______________________________________________ONMOUSEUP________________________________________________________
+        EXECUTA A AÇÃO AO SOLTAR O CLIQUE
+            <div onmouseup="acao()" style= "background:#ccc; height: 150px; width: 150px" ></div> 
+
+        _____________________________________________ONMOUSEOVER_______________________________________________________
+        AO PASSAR O MOUSE PELO ELEMENTO A AÇÃO É EXECUTADA
+            <div onmouseover="acao()" style= "background:#ccc; height: 150px; width: 150px" ></div>
+
+        _____________________________________________ONMOUSEOUT________________________________________________________
+        AO SAIR DA ÁREA DO ELEMENTO OCORRERÁ A AÇÃO.
+            <div onmouseout="acao()" style= "background:#ccc; height: 150px; width: 150px" ></div> -->
+
+            <div onclick="acao()" onmouseout = "acao2()" style= "background:#ccc; height: 150px; width: 150px" ></div>
+    </body>
+</html>

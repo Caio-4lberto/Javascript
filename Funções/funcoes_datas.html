@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Funções nativas para manipular datas </title>
+        <script>
+            
+            /*_____________________________________________________________
+            
+            var data = new Date();
+
+            document.write(data.getDate()); // SAÍDA = DIA DO MÊS 
+            document.write('</br>');
+
+            document.write(data.getMonth() + 1); // SAÍDA = MÊS DO ANO
+            document.write('</br>');             //MESES SÃO DE 0 A 11
+            
+            document.write(data.getFullYear()); // SAÍDA = DIA DO MÊS 
+            document.write('</br>');
+            
+            document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear());
+
+            __________________________________________________________________________________________*/
+
+            //                              PRÁTICA
+            
+            //ADICIONAR / REMOVER DIAS   ---> setDate
+            var data = new Date();
+
+            document.write(data.toString());
+            data.setDate(data.getDate() + 1); // CASO QUEIRA REMOVER É SÓ SUBTRAIR
+            //SE O VALOR FOR GRANDE, NÃO SE PREOCUPE QUE ELE ALTERA EM RELAÇÃO AO MÊS E ANO
+            document.write('<hr />');
+            document.write(data.toString());
+
+            document.write('</br></br></br></br></br></br>');
+
+
+            //ADICIONAR / REMOVER MESES ---> setMonth
+            document.write(data.toString());
+            data.setMonth(data.getMonth() - 1); 
+            document.write('<hr />');
+            document.write(data.toString());
+
+            document.write('</br></br></br></br></br></br>');
+
+            //ADICIONAR / REMOVER ANO ---> setFullYear
+            document.write(data.toString());
+            data.setFullYear(data.getFullYear() + 1); 
+            document.write('<hr />');
+            document.write(data.toString());
+
+
+           
+
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

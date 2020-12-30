@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Eventos Teclado </title>
+        <script>
+            function acao(){
+                alert('Evento diparado');
+            }
+
+        </script>
+    </head>
+    <body>
+    <!--  
+        
+                         onkeydown       -----         onkeypress            -----         onkeyup
+                 MOMENTO QUE PRESSIONA            AO MANTER PRESSIONADO          MOMENTO QUE LIBERA A TECLA  
+
+
+          OBS = O onkeypress SÓ É EXECUTADO SE FOR PRESSIONADO CARACTERES DIFERENTE DOS OUTROS DOIS (ISSO O DIFERNCIA DO onkeydown);
+          OBS2 =  O onkeydown E onkeypress PRIMEIRo REALIZA A AÇÃO ASSOCIADO PARA DEPOIS MOSTRAR A TECLA. NO ENTANTO, O onkeyup É O 
+          INVERSO; 
+          OBS3 = NÃO SÃO TODOS OS ELEMENTOS HTML QUE PEMITEM O USO ( PARA SABER QUAIS CONSULTE NO SITE W3Schools)
+
+
+          __________________________________________EXEMPLOS_____________________________________________________________________
+        <input onkeydown ='acao()' type = "text" />
+        <input onkeypress ='acao()' type = "text" />
+        <input onkeyup ='acao()' type = "text" />
+    __________________________________________________________________________________________________________________________________-->
+        
+            <input onkeydown ='acao()' type = "text" />
+    </body>
+</html>

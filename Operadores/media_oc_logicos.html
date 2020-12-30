@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Media Aluno III - Operadores Condicionais lógicos </title>
+        <script>
+
+            /*  && -  REPRESENTA O (e) E PARA SER VERDADEIRO TODAS AS CONDIÇÕES TEM QUE TA CERTA;
+                || - REPRESENTA O (ou) E PARA SER ERDADEIRO BASTA TER UMA CONDIÇÃO VERDADEIRA;
+                ! - tORNA O QUE SERIA ENTENDIDO COMO FALSO EM VERDADEIRO E O CONTRÁRIO. 
+                ---------------EX:   if( !(7==9) ){verdadeiro}  ----------------------             */
+   
+            var nota = prompt('Digite a nota do aluno:');
+            var faltas = prompt('Informe a quantidade de faltas:');
+
+            var media = 7;
+            var faltasMaxima = 15;
+            
+            if(nota >= media && faltas <= faltasMaxima){
+                document.write('Aprovado!');
+            } else {
+                document.write('Reprovado!');
+            }
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

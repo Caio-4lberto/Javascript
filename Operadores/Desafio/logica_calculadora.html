@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Operadores - Lógica básica calculadora </title>
+        <script>
+          
+            var number1 = prompt('Digite um número: ');
+            var operacao = prompt('Escolha a operação por soma, subtração, divisão ou multiplicação. Pode-se usar esses nomes ou os simbolos: ');
+            var number2 = prompt('Digite um segundo número: ');
+
+            number1 = parseFloat(number1);
+            number2 = parseFloat(number2);            
+
+            function calculo(number1, operacao, number2){
+                if(operacao == 'soma' || operacao == '+'){
+                    resposta = number1 + number2;
+                } else if (operacao == 'subtração' || operacao == '-'){
+                    resposta = number1 - number2;
+                } else if (operacao == 'multiplicação' || operacao == '*'){
+                    resposta = number1 * number2;
+                } else if (operacao == 'divisão' || operacao == '/'){
+                    resposta = number1 / number2;
+                } else {
+                    resposta = 'Indefinido! O/A senhor(a) digitou a operação de maneira errada.';
+                }
+
+                return resposta;
+          }
+
+          document.write('O resultado é: ' + calculo(number1, operacao, number2)); 
+          
+        
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

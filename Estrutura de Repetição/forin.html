@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> For in </title>
+        <script>
+         
+         /*_________________________________FOR IN_______________________________
+
+            UTILIZADO PARA PERCORRER UM ARRAY, PORÉM ELE SE BASEIA NO ÍNDICE QUE 
+            FOI ESPECIFICADO, NÃO IMPORTANDO SE SEGUEM UMA ORDEM OU NÃO.
+
+            OBS: PERCORRER O ARRAY COM FOR NECESSITA QUE O ÍNDICE SIGA UMA ORDEM,
+            O FOR IN NÃO.
+         _______________________________________________________________________*/
+
+         var listaConvidados = Array();
+
+        listaConvidados['a'] = 'Caio';    // OS ÍNDICES NÃO TEM SENTIDO E MESMO ASSIM... 
+        listaConvidados[15] = 'Nívea';    // ... FUNCIONA AO PROPÓSITO.
+        listaConvidados[false] = 'James';
+        listaConvidados['leão'] = 'Lenilda';
+        listaConvidados[-1] = 'Charlotte';
+
+        console.log(listaConvidados);
+
+        for(var x in listaConvidados){
+            console.log(' Índice: ' + x + ' valor: ' + listaConvidados[x])
+        }
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

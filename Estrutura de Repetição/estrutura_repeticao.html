@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Estrutura de Repetição </title>
+        <script>
+
+        /*_______________________________WHILE_____________________
+
+            var x = 1;       ---> variável
+            
+            while(condição){
+                
+                x++            ---> controle             
+            }
+
+
+
+        ____________________________DO WHILE________________________
+
+            var x = 1;       ---> variável
+            
+            do {
+                
+                x++       ---> controle             
+            } while(condição)     
+
+
+
+        _______________________________FOR__________________________
+
+            for(variável; condição; controle){
+
+            }
+        ____________________________________________________________*/
+
+        //EXEMPLO WHILE
+        var x = 1
+        
+        while(x <= 10){
+            document.write(x + '</br>');
+
+            x++
+        }
+
+        document.write('<hr />');
+
+
+        //EXEMPLO DO WHILE COM STRINGS
+        var azul = 0;
+
+        do{
+
+            document.write('azul' + '</br>');       // DO WHILE ELE SEMPRE EXECUTA 1 VEZ PARA DEPOIS SEGUIR O LOOP, SE NÃO ESTÁ NA CONDIÇÃO ELE EXECUTARÁ 1 VEZ
+            azul--
+            
+        }while(azul > 0);
+
+        document.write('<hr />');
+
+
+        //EXEMPLO FOR MULTIPLO DE 3 
+        for(var teste = 30; teste > 0; teste-=3){
+            document.write(teste + '</br>');
+        }
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Array - Método de Pesquisa </title>
+
+        <script>
+            /*____________________________MÉTODO DE PESQUISA_________________________________________  
+            
+                                    lista_frutas.indexOf('Acerola');
+
+            OBS1: ELE É CASE SENSITIVE, PARA ACHAR TEM QUE SER EXATAMENTE A PALAVRA
+            ________________________________________________________________________________________*/
+
+            var lista_frutas = Array()
+
+            lista_frutas[0] = 'Açaí';
+            lista_frutas[1] = 'Goiaba';
+            lista_frutas[2] = 'Acerola';
+            lista_frutas[3] = 'Graviola';
+
+            var auxiliar = lista_frutas.indexOf('Acerola');     //FOI UTILIZADO DESSA VARIÁVEL PARA O CÓDIGO FICAR MAIS LIMPO
+
+            if(auxiliar === -1) {                         // O VALOR '-1' É O VALOR QUE SERÁ IMPRESSO AO PESQUISAR QUANDO NÃO TIVER O ELEMENTO
+                console.log('Elemento não existe');       
+            } else {
+                console.log('Elemento não existe e está na posição ' + auxiliar);     //QUANDO TIVER O ELEMENTO O QUE SERÁ MOSTRADO É O INDICE DELE
+            }
+
+        </script>
+    
+    </head>
+    <body>
+       
+        
+    </body>
+</html>

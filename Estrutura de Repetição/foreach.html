@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> For each </title>
+        <script>
+         
+            var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernando'];
+
+       
+       
+       
+        /*_____________________________________USO PADRÃO______________________________________________
+        listaFuncionarios.forEach(function(valor){
+            console.log(valor);
+         })
+
+         listaFuncionarios.forEach(function(valor, indice){
+            console.log(valor, indice);
+         })
+
+         listaFuncionarios.forEach(function(array){
+            console.log(array);
+         })*/
+
+
+         
+         listaFuncionarios.forEach(function(valor, indice, array){
+            console.log(valor, indice);
+            console.log(array);                   //COMO HÁ 5 INDICES REPETIRÁ O ARRAY 5 VEZES
+         })
+
+
+         //_____________________________ALTERANDO ELEMENTO ARRAY COM FOR EACH______________________________________________
+
+          listaFuncionarios.forEach(function(valor, indice, array){
+            if(valor == 'Lucas'){
+                array[indice] = 'Um novo valor';
+            }
+            
+         });
+         console.log(listaFuncionarios);
+
+         //_____________________________________FOR EACH COM WRAPPER________________________________________________________
+
+         var f = listaFuncionarios.forEach(function(valor, indice, array){
+                    console.log(valor, indice);
+                });
+        
+        listaFuncionarios.forEach(f);
+
+        /*_______________________________________OBSERVAÇÃO__________________________________________________________________
+
+                O FOR EACH EM RELAÇÃO AOS INDICES APENAS ATUA EM VALORES NÚMERICOS PARTINDO DO 'ZERO', NÃO NECCESSITANDO SER 
+                SEQUENCIAL.
+        ____________________________________________________________________________________________________________________*/
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

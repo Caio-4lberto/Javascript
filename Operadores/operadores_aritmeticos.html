@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Operadores aritmeticos </title>
+        <script>
+            var num1 = prompt('Digite o primeiro valor:');
+            var num2 = prompt('Digite o segundo valor:');
+
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+
+            document.write('A soma entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 + num2) + '</br>');
+            document.write('A subtração entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 - num2) + '</br>');
+            document.write('A multiplicação entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 * num2) + '</br>');
+            document.write('A divisão entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 / num2) + '</br>');
+            document.write('O módulo entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 % num2) + '</br>');
+            document.write('O incremento de ' + num1 + ' é: ' + (++num1) + '</br>');
+            // QUANDO O DECREMENTO OU INCREMENTO VEM ANTES DO VALOR, SUA EXECUÇÃO É COM O VALOR ACRESCIDO OU DECRESCIDO  
+            document.write('O decremento de ' + num2 + ' é: ' + (num2--) + '</br>' + '</br>');
+            /* QUANDO O DECREMENTO OU INCREMENTO VEM APÓS O VALOR, SUA EXECUÇÃO É COM O VALOR ATUAL. PORÉM A 
+            VARIÁVEL QUE CONTER ESSE VALOR APÓS A LINHA DE CÓDIGO QUE SOFRERÁ OS EFEITOS REDUZINDO OU AUMENTANDO  */
+
+
+            // ATRIBUIÇÕES DE VALORES ENXUTOS COM OPERADORES ARITMETICOS
+            /*  var teste = 10;                          var teste2 = 'Olá';                                 
+                                
+                teste = teste + 5                        teste2 += 'Caio';   
+                    teste += 5;                             document.write(teste);
+                    teste -= 5;                            
+                    teste *= 5;                          NOTA-SE QUE É POSSÍVEL    
+                    teste /= 5;                          CONCATENAR TAMBÉM.
+                    teste %= 5;
+            */
+
+            //****************REGRAS DE PRECEDÊNCIA***************
+            /* 
+                () - APLICA PRECEDÊNCIA;
+            1º - MULTIPLICAÇÃO E DIVISÃO;      -> MESMO PESO ,SERÁ PRIORIZADO QUEM VIER PRIMEIRO
+            2º - SOMA E SUBTRAÇÃO.             -> MESMO PESO ,SERÁ PRIORIZADO OS ANTERIORE E DEPOIS QUEM VIER PRIMEIRO
+
+            */
+            document.write(1 - 1 + 2 * 5 + '</br>');
+            document.write(1 + 1 - 2 * 5 + '</br>');
+            document.write(100 / 10 * 5 + '</br>');
+            document.write(100 * 10 / 5 + '</br>');
+            document.write((1 + 2) * 5 + '</br>');
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

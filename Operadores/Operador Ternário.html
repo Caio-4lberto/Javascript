@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Media Aluno - Operador Ternário </title>
+        <script>
+            /* -----------   ESTRUTURA   --------------
+            var resultado = (condição) ? verdadeiro : falso;
+                O OPERADOR TERNÁRIO SERVE PARA FAZER A FUNÇÃO SIMILAR AO IF/ELSE, PORÉM RETORNA SAÍDAS SIMPLES SENDO NESSA 
+                ORDEM DE VERDADEIRO E EM SEGUIDA FALSO. SENDO ASSIM IMPOSSIBILITA O USO DE LÓGICAS MAIS ROBUSTAS NA SÁIDA.
+                VANTAGEM: SINTAXE MAIS ENXUTA.   */                                                              
+
+            var nota = prompt('Digite a nota do aluno:');
+            var faltas = prompt('Informe a quantidade de faltas:');
+
+            var media = 7;
+            var faltasMaxima = 15;    
+
+            var resultado = (nota >= media && faltas <= faltasMaxima) ? 'Aprovado' : 'Reprovado'; 
+                document.write(resultado);
+            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

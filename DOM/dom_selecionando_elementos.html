@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> DOM - Introdução e Seleção de elementos </title>
+        
+        <!--_________________________________________DOM__________________________________________________________
+            Ele fornece uma representação estruturada do documento como uma árvore e define métodos que permitem 
+            acesso à árvore, para que eles possam alterar a estrutura, estilo e conteúdo do documento;
+
+            NO BODY ESTÁ ANEXADA UMA IMAGEM QUE REPRESENTA O DOM COM SUA ARVORE 
+
+           _______________________________________SELECONADORES____________________________________________________
+            getElementById('nome_usuario');      // O MAIS IMPORTANTE ,POIS ELE É ESPECÍFICO NA PÁGINA
+            getElementsByTagName('input');
+            getElementsByClassName('campo_texto');
+            getElementsByName('nome');
+
+            OBS: COM EXCEÇÃO DO PRIMEIRO MENCIONADO, O RESTANTE TEM A ATRIBUIÇÃO DA LETRA 's' APÓS 'Element' , POIS
+            COMO RESPOSTAS OS RESULTADOS SERÃO COLEÇÕES.
+            OBS2: DEVIDO AO SELECIONADOR DOM CONTIDO NO SCRIPT FOI PRECISO QUE ELE FICASSE APÓS O INPUT EM RAZÃO DA 
+            ORDEM DE PRECEDÊNCIA, CASO CONTRÁRIO O VALOR SERÁ NULO.
+            ____________________________________________________________________________________________________-->
+        
+    </head>
+    <body>
+        
+        <input
+        type="text";
+        placeholder="Digite seu nome";
+        id="nome_usuario";
+        class="campo_texto";
+        name="nome";
+        >
+
+        <div>
+            <img width="850px" height="650px" src="img/DOM.png">
+            <!--OBSERVANDO ESSA IMAGEM NOTA-SE QUE HÁ PRECEDNCIA -->
+        </div>
+
+        <script>
+            //console.log(document.getElementById('nome_usuario'));
+            //console.log(document.getElementsByTagName('input'));
+            //console.log(document.getElementsByClassName('campo_texto'));
+            console.log(document.getElementsByName('nome'));
+            
+        </script>
+
+    </body>
+</html>
